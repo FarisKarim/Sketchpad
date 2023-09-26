@@ -10,37 +10,4 @@ body {
   margin-bottom: 20px;
   color: whitesmoke;
 }
-.pad {
-  display: flex;
-  box-sizing: border-box;
-  border: 5px solid;
-  justify-content: space-between;
-  align-items: center;
-  flex-grow: 1;
-}
-.pad .button {
-  color: rgb(205, 205, 237);
-  width: 100px;
-  font-size: medium;
-  height: 65px;
-  background-color: #688289;
-  margin: 20px;
-  border: 3px dotted #212120;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.pad .button:hover {
-  background-color: orange;
-  transform: scale(1.1);
-}
 
-
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

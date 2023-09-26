@@ -1,17 +1,53 @@
+.pad {
+  display: flex;
+  border: 2px solid red;
+  justify-content: space-around;
+  height: 700px;
+  align-items: center;
+  background-color: orange;
+}
+.buttons {
+  height: 75%;
+  border: 4px solid salmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.buttons .change-color {
+  background-color: rgb(222, 174, 250);
+}
 .sketchpad {
   display: grid;
-  grid-template-columns: repeat(20, 30px);
-  grid-template-rows: repeat(20, 30px);
-  gap: 1px;
+  grid-template-columns: repeat(30, 20px);
+  grid-template-rows: repeat(30, 20px);
+  box-sizing: border-box;
+  border: 4px solid red;
+  height: 620px;
+  width: 620px;
 }
+.button {
+  width: 100px;
+  font-size: medium;
+  height: 65px;
+  color: black;
+  font-weight: bold;
+  background-color: #688289;
+  border: 3px dotted #212120;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.button:hover {
+  background-color: orange;
+  transform: scale(1.1);
+}
+
 
 .cell {
   width: 30px;
   height: 30px;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(224, 85, 85);
 }
 
 .cell.filled {
-  background-color: #000;
+  background-color: rgb(12, 118, 159);
 }
